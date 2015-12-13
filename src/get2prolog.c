@@ -64,7 +64,7 @@ int main () {
 	}
 	
 	//temp string used to store string copy of final product to be output
-	char* output = (char*)malloc(adjustedLength);
+	char* output = (char*)malloc(adjustedLength+1);
 	
 	strncpy(output, byLine, insertLocation);
 	output[insertLocation] = '\0';
